@@ -16,4 +16,5 @@ public class MessageAudits {
     private String msgSourceService;
     private LocalDateTime msgTimestamp;
     private String msgPayload;
+    private String msgStatus;
 }
