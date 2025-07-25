@@ -11,9 +11,9 @@ import com.arpajit.holidayplanner.data.model.MessageAudits;
 @Repository
 public interface MessageAuditsRepository extends JpaRepository<MessageAudits, String> {
     List<MessageAudits> findAll();
-    MessageAudits findByTraceId(int traceId);
+    MessageAudits findByTraceId(String traceId);
     List<MessageAudits> findByMsgRequestType(String msgRequestType);
     List<MessageAudits> findByMsgSourceService(String msgSourceService);
     List<MessageAudits> findByMsgTimestampBetween(LocalDateTime start, LocalDateTime end);
-    boolean existsByTraceId(int traceId);
+    boolean existsByTraceId(String traceId);
 }
