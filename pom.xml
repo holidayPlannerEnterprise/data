@@ -42,7 +42,18 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.arpajit.holidayplanner</groupId>
+			<artifactId>dto</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
@@ -104,12 +115,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-				<executions>
-					<execution>
-						<id>repackage</id>
-						<phase>none</phase>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
