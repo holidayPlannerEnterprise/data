@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
 import com.arpajit.holidayplanner.data.model.MessageAudits;
 
 @Repository
-public interface MessageAuditsRepository extends JpaRepository<MessageAudits, Integer> {
+public interface MessageAuditsRepository extends JpaRepository<MessageAudits, String> {
     List<MessageAudits> findAll();
-    List<MessageAudits> findByMsgId(int msgId);
+    List<MessageAudits> findByTraceId(int traceId);
     List<MessageAudits> findByMsgRequestType(String msgRequestType);
     List<MessageAudits> findByMsgSourceService(String msgSourceService);
     List<MessageAudits> findByMsgTimestampBetween(LocalDateTime start, LocalDateTime end);
