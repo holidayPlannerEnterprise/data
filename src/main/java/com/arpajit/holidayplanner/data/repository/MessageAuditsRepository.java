@@ -15,5 +15,5 @@ public interface MessageAuditsRepository extends JpaRepository<MessageAudits, St
     List<MessageAudits> findByMsgRequestType(String msgRequestType);
     List<MessageAudits> findByMsgSourceService(String msgSourceService);
     List<MessageAudits> findByMsgTimestampBetween(LocalDateTime start, LocalDateTime end);
-    boolean existsByMsgId(int msgId);
+    boolean existsByTraceId(int traceId);
 }
