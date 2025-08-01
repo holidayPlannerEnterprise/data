@@ -34,7 +34,7 @@ public class DataServiceController {
                                     @RequestParam String status,
                                     @RequestParam String statusResp) {
         logger.info("Requested {}: {}", httpRequest.getMethod(), httpRequest.getRequestURL());
-        logger.info("Requested Update for:\ttraceId: {}\n\tstatus: {}\n\tstatusResp: {}",
+        logger.info("Requested Update for:\n\ttraceId: {}\n\tstatus: {}\n\tstatusResp: {}",
                         traceId, status, statusResp);
         return databaseComm.updateAudit(traceId, status, statusResp);
     }
