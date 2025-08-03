@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import com.arpajit.holidayplanner.data.model.MessageAudits;
 import com.arpajit.holidayplanner.data.repository.HolidaysRepository;
 import com.arpajit.holidayplanner.data.repository.MessageAuditsRepository;
-import com.arpajit.holidayplanner.dto.KafkaMessage;
-import com.arpajit.holidayplanner.dto.HolidayAllFields;
+import com.arpajit.holidayplanner.data.dto.KafkaMessage;
+import com.arpajit.holidayplanner.data.dto.HolidayAllFields;
 
 @Service
 public class DatabaseComm {

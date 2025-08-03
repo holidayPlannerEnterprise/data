@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.servlet.http.HttpServletRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.arpajit.holidayplanner.dto.KafkaMessage;
-import com.arpajit.holidayplanner.dto.HolidayAllFields;
 import com.arpajit.holidayplanner.data.service.*;
+import com.arpajit.holidayplanner.data.dto.KafkaMessage;
+import com.arpajit.holidayplanner.data.dto.HolidayAllFields;
 
 @RestController
 @RequestMapping("/dataservice")
